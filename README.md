@@ -24,7 +24,7 @@ pip install virtualenv django==2.2.14 djangorestframework rest-framework-swagger
 
 clone project from github.
 ```sh
-git hun
+https://github.com/shivagangula/shortme.git
 ```
 go main project directory
 ```sh
