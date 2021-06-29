@@ -22,5 +22,5 @@ class UrlDetailes(models.Model):
     def __str__(self):
         return f"Short Url for: {self.original_url} is {self.shorted_url}"
 
-    def get_absolute_url(self):
-        return reverse('slug', args=[str(self.slug)])
+    def object_check(self):
+        return f"original url { self.original_url }"

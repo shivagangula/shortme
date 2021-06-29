@@ -13,9 +13,9 @@ schema_view = get_schema_view(title='Shortme API', renderer_classes=[
                               OpenAPIRenderer, SwaggerUIRenderer])
 
 urlpatterns = [
-    path('', schema_view, name="docs"),
+    path('', schema_view, name="home"),
     path('admin/', admin.site.urls),
     path('api/v1/csu/', UrlViewSet.as_view()),
-    path('<str:slug>/', redirect_shortner),
+    path('<str:slug>/', redirect_shortner, name="urlredirect"),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]

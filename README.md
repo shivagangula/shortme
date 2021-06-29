@@ -41,21 +41,23 @@ now start django server
 ```sh
 python manage.py runserver
 ```
-use can see swagger ui after hitting
 ```sh
 http://127.0.0.1:8000/
 ```
 
+use can see swagger ui after hitting
+
+
 #### Using Shortme API
 In swagger UI you can see one post endpoint
 ```sh
-endpoint - http://127.0.0.1:8000/api/v1/csu/
+http://127.0.0.1:8000/api/v1/csu/
 ```
 after hitting endpoint in browser or swagger UI. you should provied original/long url as parameter with json format like
 ```sh
 {"original_url":"http://www.google.com"}
 ```
-Note : `you must provied absoulte url like`
+Note : `you must provied absoulte url` example: 
 `www.google.com is not valid.`
 `https://www.google.com is vaild `
 
