@@ -20,10 +20,3 @@ class UrlDetailesTest(TestCase):
             UrlDetailes_gooogle.object_check(), 'original url http://www.google.com')
         self.assertEqual(
             UrlDetailes_yahoo.object_check(), 'original url http://www.yahoo.com')
-
-    def test_urlshorntner(self):
-        UrlDetailes_gooogle = UrlDetailes.objects.get(
-            original_url='http://www.google.com')
-        UrlDetailes_yahoo = UrlDetailes.objects.get(
-            original_url='http://www.yahoo.com')
-        print(UrlDetailes_gooogle.get_absolute_url())
